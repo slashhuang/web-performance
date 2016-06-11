@@ -8,7 +8,7 @@
 ### 上传及下载
 1. blob(二进制大对象接口，只能查询大小、类型及切割，提供了JS中API的高效互操机制)
     - 支持slice操作
-    - 需要设置`Content-Range`来设置上传数据大小
+    - 在slice的同时，需要设置`Content-Range`来设置上传数据的uploadSize/blob.size
 
 ### 对流的处理
 - 上传时候，send只支持完整的载荷
